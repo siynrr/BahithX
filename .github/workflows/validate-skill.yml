@@ -1,19 +1,6 @@
 name: Validate Agent Skill and Dataset
 
-'on':
-@@ -8,38 +7,40 @@
-      - "examples/**"
-      - "tests/**"
-      - ".github/workflows/validate-skill.yml"
-
-  pull_request:
-    paths:
-      - "skills/**"
-      - "examples/**"
-      - "tests/**"
-      - ".github/workflows/validate-skill.yml"
-
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 permissions:
   contents: read
@@ -21,7 +8,6 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
