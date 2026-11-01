@@ -1,15 +1,23 @@
-name: Validate Agent Skill
+```yaml
+name: Validate Agent Skill and Dataset
 
 on:
   push:
     paths:
       - "skills/**"
+      - "examples/**"
+      - "tests/**"
       - ".github/workflows/validate-skill.yml"
   pull_request:
     paths:
       - "skills/**"
+      - "examples/**"
+      - "tests/**"
       - ".github/workflows/validate-skill.yml"
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   validate:
@@ -31,3 +39,7 @@ jobs:
 
       - name: Validate market intelligence skill
         run: skills-ref validate skills/market-intelligence
+
+      - name: Run dataset tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+```
