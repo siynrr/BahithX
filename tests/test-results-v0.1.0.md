@@ -38,6 +38,7 @@ These results represent manual evaluation. They do not establish automated execu
 ## Next Steps
 
 1. Validate the skill's packaging and metadata against the Agent Skills specification.
-2. Run the skill in a compatible environment that actually loads its instructions.
-3. Execute the test cases in that environment and record the generated outputs.
-4. Address any failures and update the results accordingly.
+2. Install and run the skill in a compatible environment that loads its instructions.
+3. Execute the test cases in that environment and record the actual outputs.
+4. Address any failures and update the test results.
+5. Independently replicate the tests to assess reproducibility.
