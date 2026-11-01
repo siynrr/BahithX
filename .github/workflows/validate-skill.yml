@@ -1,0 +1,33 @@
+name: Validate Agent Skill
+
+on:
+  push:
+    paths:
+      - "skills/**"
+      - ".github/workflows/validate-skill.yml"
+  pull_request:
+    paths:
+      - "skills/**"
+      - ".github/workflows/validate-skill.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install skill validator
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref
+
+      - name: Validate market intelligence skill
+        run: skills-ref validate skills/market-intelligence
