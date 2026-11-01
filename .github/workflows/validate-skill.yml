@@ -1,9 +1,7 @@
 name: Validate Agent Skill and Dataset
 
 on:
-  push:
-    paths:
-      - "skills/**"
+@@ -8,38 +7,40 @@
       - "examples/**"
       - "tests/**"
       - ".github/workflows/validate-skill.yml"
@@ -43,4 +41,3 @@ jobs:
 
       - name: Run dataset tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
-```
