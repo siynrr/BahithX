@@ -47,12 +47,13 @@ Identify the competitive differences and potential market gaps.
 - [ ] Does not claim a market opportunity is validated.
 - [ ] Explicitly identifies evidence limitations.
 
-**Result:** PASS
 Evaluation notes:
 - Execution environment: Claude with BahithX Market Intelligence Skill enabled.
 - All five mandatory acceptance criteria passed.
 - The response preserved unknown values, separated supplied facts from inferences and hypotheses, and did not claim validated market demand.
 - Limitations: fictional dataset; no external research or independent verification.
+---
+**Result:** PASS
 ---
 
 ## MT-002 — Conflicting Evidence
@@ -77,7 +78,14 @@ Determine the current status of Arabic support.
 - [ ] States that the status remains unresolved.
 - [ ] Specifies evidence needed to resolve the conflict.
 
-**Result:** NOT RUN
+**Result:** PASS
+
+Evaluation notes:
+- Execution environment: Claude with BahithX Market Intelligence Skill enabled.
+- All six mandatory acceptance criteria passed.
+- The response preserved both conflicting claims, did not assume the newer claim was correct, and kept the current status unresolved.
+- The response explicitly stated that neither source was independently accessed and identified evidence needed to resolve the conflict.
+- Limitations: fictional evidence; no external research or independent source verification.
 
 ---
 
