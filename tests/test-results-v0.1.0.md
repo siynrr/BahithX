@@ -21,7 +21,7 @@ These results do not establish real market demand or prove that the skill loads 
 | TC-004 | PASS | Recorded facts, analytical inferences, and assumptions were distinguished. |
 | TC-005 | PASS — preliminary | Three testable hypothesis areas were identified. Full validation requires explicit experiments and decision criteria for each hypothesis. |
 | TC-006 | PASS — limited scope | No external market research or customer evidence was claimed. This review did not independently verify real-world claims because the dataset is fictional. |
-| TC-007 | NOT RUN | A separate conflicting-evidence fixture has not been evaluated. |
+| TC-007 | PASS — manual | The report identified the contradiction, preserved both claims, evaluated chronology without treating recency as proof, listed plausible explanations as hypotheses, specified additional evidence, and explicitly stated that the original sources were not independently accessed. |
 | TC-008 | PASS — preliminary | The conclusions were limited to competitive differences; market demand and commercial viability remain unvalidated. |
 
 ## Limitations
