@@ -1,6 +1,6 @@
 name: Validate Agent Skill and Dataset
 
-on:
+'on':
 @@ -8,38 +7,40 @@
       - "examples/**"
       - "tests/**"
