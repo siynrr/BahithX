@@ -26,6 +26,27 @@ These results represent manual evaluation. They do not establish automated execu
 | TC-007 | PASS — manual | The report identified the contradiction, retained both claims, assessed chronology and source limitations, avoided an unsupported definitive conclusion, and specified further verification steps. Original sources were not independently accessed. |
 | TC-008 | PASS — preliminary | The conclusions were limited to competitive differences; market demand and commercial viability remain unvalidated. |
 
+### TC-007 — Conflicting Evidence
+
+**Result:** PASS — Manual execution in Claude  
+**Test date:** 2026-11-01  
+**Environment:** Claude with the BahithX Market Intelligence Skill uploaded and enabled  
+**Test fixture:** Synthetic conflicting evidence for NovaDesk Arabic language support
+
+**Observed behavior:**
+- Identified the contradiction between the two supplied claims.
+- Preserved both claims without arbitrarily selecting one.
+- Did not treat the newer observation as conclusive proof.
+- Distinguished supplied claims from independently verified facts.
+- Listed plausible explanations as hypotheses.
+- Specified additional evidence required to resolve the conflict.
+- Did not invent source URLs or claim to have accessed the original documents.
+- Explicitly stated that no external research was performed.
+
+**Assessment:** The generated report satisfied the TC-007 behavioral acceptance criteria.
+
+**Limitation:** The response is consistent with correct skill behavior, but does not independently prove that the skill was automatically loaded or that the behavior was caused by the skill rather than the model's default capabilities.
+
 ## Limitations
 
 - Evaluation was manual, not automated.
